@@ -2,10 +2,11 @@ import { useReducer } from 'react';
 import CartContext from './CartContext';
 import CartReducer from './CartReducer';
 import { sumItems } from './CartReducer';
-import { CLEAR_SEARCH } from './CartTypes';
 
 //Local Storage
-const storage = localStorage.getItem('cartItems') ? JSON.parse(localStorage.getItem('cartItems')) : [];
+const storage = localStorage.getItem('cartItems')
+  ? JSON.parse(localStorage.getItem('cartItems'))
+  : [];
 
 const CartState = ({ children }) => {
   //Initial State of the cart
@@ -16,17 +17,16 @@ const CartState = ({ children }) => {
 
   //⬆️⬆️   Change to local Storage    ⬆️⬆️
   const initialState = {
-   cartItems:storage,
-   ...sumItems(storage),
-   
-  }
+    cartItems: storage,
+    ...sumItems(storage),
+  };
 
   //Set up the reducer
   const [state, dispatch] = useReducer(CartReducer, initialState);
 
   //Function to handle when an item is added from the store into the cart
   const addToCart = (payload) => {
-    dispatch({ type: 'ADD_TO_CART', payload});
+    dispatch({ type: 'ADD_TO_CART', payload });
   };
   //Function to handle when an item that is in the cart is added again
   const increase = (payload) => {
@@ -48,14 +48,13 @@ const CartState = ({ children }) => {
     dispatch({ type: 'CLEAR' });
   };
 
+  const searchFilter = (text) => {
+    dispatch({ type: 'SEARCH_FILTER', payload: text });
+  };
 
-  const searchFilter =(text)=>{
-dispatch({ type: 'SEARCH_FILTER', payload: text });
-  }
- 
-  const clearSearch = ()=>{
-    dispatch({ type: 'CLEAR_SEARCH'})
-  }
+  const clearSearch = () => {
+    dispatch({ type: 'CLEAR_SEARCH' });
+  };
 
   return (
     //Add the functions that have been defined above into the Context provider, and pass on to the children

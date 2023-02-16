@@ -1,5 +1,6 @@
 import React from 'react';
-import Footer from './footer.styles.css';
+import { Link } from 'react-router-dom';
+import './footer.styles.css';
 function footer() {
   return (
     <section className='footer-container'>
@@ -40,10 +41,12 @@ function footer() {
             ></textarea>
           </div>
           <div className='form-group'>
-           <a href="#" className='form-submit'>Submit</a>
+            <Link to='/' className='form-submit'>
+              Submit
+            </Link>
           </div>
         </form>
-        <p >&copy; Igor Sirghii. All Rights Reserved.</p>
+        <p>&copy; Igor Sirghii. All Rights Reserved.</p>
       </div>
     </section>
   );

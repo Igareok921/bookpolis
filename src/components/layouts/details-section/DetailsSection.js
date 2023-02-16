@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext } from 'react';
+import React, { useState, useEffect } from 'react';
 import './DetailsSection.styles.css';
 import { useParams } from 'react-router-dom';
 import { BooksData } from '../../../books-data/BooksData';
@@ -27,16 +27,16 @@ function DetailsSection() {
               <h2 className='book-name-detail'>{bookData.book_name}</h2>
               <h3>{bookData.author_name}</h3>
             </div>
-<div className="description-container-details">
-  <p className='description-book'>{bookData.book_description}</p>
-            <p>
-              <b>Language :</b> {bookData.language}
-            </p>
-            <p>
-              <b>Book Length :</b> {bookData.print_length}
-            </p>
-</div>
-            
+            <div className='description-container-details'>
+              <p className='description-book'>{bookData.book_description}</p>
+              <p>
+                <b>Language :</b> {bookData.language}
+              </p>
+              <p>
+                <b>Book Length :</b> {bookData.print_length}
+              </p>
+            </div>
+
             <ContinueShopping className='continue-shopping-detail' />
           </div>
         </div>
