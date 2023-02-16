@@ -19,7 +19,7 @@
 .product-listing-image {
   height: 100%;
   width: 80%;
-  
+
   border-radius: 4px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
@@ -34,14 +34,13 @@
   margin-bottom: 0.8rem;
 }
 
-.add-btn-price{
+.add-btn-price {
   border: none;
   text-decoration: none;
   background-color: blue;
   box-shadow: none;
-  
 }
-.add-btn-price:hover{
+.add-btn-price:hover {
   border: none;
   text-decoration: none;
 }
@@ -79,31 +78,30 @@
   transition: 0.3s linear;
   margin-top: 1rem;
   border: none;
-
 }
 .product-listing-btn:hover {
   transform: translateY(-4px);
-cursor: pointer;
+  cursor: pointer;
+
 }
 
 .product-listing-btn:hover.shopping-cart {
   transform: translateX(0%);
 }
-.details-link{
+.details-link {
   text-decoration: underline;
   color: var(--primary-color1);
   cursor: pointer;
 }
-.details-link:hover{
+.details-link:hover {
   color: var(--primary-color);
 }
 
-
 @media only screen and (max-width: 390px) {
-  .popular-books{
+  .popular-books {
     font-size: 1.5rem;
   }
-  .product-listing-container{
+  .product-listing-container {
     margin-top: 1.2rem;
   }
 }

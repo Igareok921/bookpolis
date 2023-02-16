@@ -11,12 +11,11 @@
   font-family: 'Roboto Slab', serif;
 }
 
-:root{
- --primary-color:#ffc066;
- --primary-color1:#e29e40;
- --white-color:#fff;
+:root {
+  --primary-color: #ffb703;
+  --primary-color1: #fd9e02;
+  --white-color: #fff;
 }
-
 
 h1,
 h2,
@@ -25,7 +24,6 @@ h4,
 h5,
 h6 {
   font-family: 'Roboto Slab' serif;
-  
 }
 
 h1 {
@@ -39,15 +37,15 @@ h1 {
 .flex {
   display: flex;
 }
-.justify-center{
- justify-content: center;
+.justify-center {
+  justify-content: center;
 }
-.justify-between{
- justify-content: space-between;
+.justify-between {
+  justify-content: space-between;
 }
-.align-center{
- align-items: center;
+.align-center {
+  align-items: center;
 }
-.text-primary{
+.text-primary {
   color: var(--primary-color1);
 }
