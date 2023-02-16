@@ -1,0 +1,73 @@
+.showcase-container {
+  height: 100vh;
+  width: 100%;
+  background-image: url('../../../assets/showcase-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+}
+.showcase-content {
+  width: fit-content;
+  padding: 0 1rem;
+  z-index: 1;
+}
+.showcase-content h1 {
+  color: white;
+  text-align: center;
+  padding-bottom: 6px;
+}
+.showcase-content p {
+  color: white;
+  text-align: center;
+}
+.showcase-content p {
+  font-family: 'Solitreo', cursive;
+  font-size: 1.4rem;
+  font-style: italic;
+  margin-bottom: 1.2rem;
+}
+.span-h1 {
+  color: #ffc066;
+}
+.span-p {
+  color: #ffc066;
+  font-family: 'Solitreo', cursive;
+  font-size: 1.4rem;
+  font-style: italic;
+}
+
+
+@media only screen and (max-width: 436px) {
+  .showcase-content h1 {
+font-size: 2.2rem;
+}
+.showcase-content p {
+
+  font-size: 1.1rem;
+  margin-bottom: 0.7rem;
+
+}
+}
+@media only screen and (max-width: 390px) {
+  .showcase-content h1 {
+font-size: 2.2rem;
+}
+.showcase-content p {
+
+  font-size: 1.1rem;
+  margin-bottom: 0.7rem;
+
+}
+}

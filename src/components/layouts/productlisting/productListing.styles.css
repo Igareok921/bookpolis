@@ -1,0 +1,14 @@
+.product-listing-container {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+.container h2 {
+  margin-bottom: 2rem;
+}
+
+@media only screen and (max-width: 1130px) {
+  .container h2 {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+}

@@ -1,0 +1,120 @@
+.detail-section-container {
+  margin-top: 8rem;
+  margin-bottom: 5rem;
+}
+.flex-container {
+  display: flex;
+  justify-content: center;
+}
+
+.image-book-container {
+  margin-right: 2rem;
+  width: 30%;
+  margin-bottom: 2rem;
+}
+.book-detail-container {
+  width: 100%;
+}
+.image-book-container {
+  display: flex;
+  justify-content: center;
+}
+
+.image-book-container img {
+  height: 400px;
+}
+
+.title-author-book h2 {
+  font-size: 2rem;
+  text-align: start;
+  margin-bottom: 0.5rem;
+}
+.title-author-book h3 {
+  color: var(--primary-color1);
+  
+}
+
+.detail-section-container p {
+  margin: 1rem 0;
+  
+}
+.author-name {
+  color: var(--primary-color1);
+  font-size: 1.2rem;
+}
+.description-book {
+  line-height: 1.7;
+}
+.price-book-detail {
+  font-size: 1.5rem;
+  padding-top: 1rem;
+  color: var(--primary-color1);
+}
+
+.add-btn-price {
+  border: none;
+  text-decoration: none;
+  color: white;
+}
+.add-to-cart {
+  width: 100%;
+  color: #fff;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: 1rem;
+  transform: translateY(0px);
+  transition: 0.3s linear;
+  margin-top: 1.5rem;
+
+  border: none;
+}
+.add-to-cart:hover {
+  transform: translateY(-4px);
+  border: none;
+  text-decoration: none;
+}
+.price-add-to-cart {
+  font-weight: 700;
+  font-size: 1.4rem;
+  background-color: var(--primary-color1);
+  padding: 0.45rem 1rem;
+
+  color: #fff;
+  text-align: center;
+  border-radius: 4px 0 0 4px;
+}
+.description-container-details{
+  margin-bottom: 2rem;
+}
+
+
+@media only screen and (max-width: 1130px) {
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 390px){
+
+.image-book-container img {
+  height: 300px;
+  
+}
+.image-book-container {
+  margin-right: 0rem;
+  width: 30%;
+  margin-bottom: 2rem;
+}
+.title-author-book h2 {
+  font-size: 1.5rem;
+  text-align: start;
+}
+.title-author-book h3 {
+  font-size: 1rem;
+  
+}
+}

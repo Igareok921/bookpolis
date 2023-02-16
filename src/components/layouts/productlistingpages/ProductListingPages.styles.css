@@ -1,0 +1,45 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  grid-gap: 3rem;
+}
+.grid-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.product-listing-all-containers {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+@media only screen and (max-width: 1880px) {
+  .grid-container {
+    grid-template-columns: auto auto auto auto;
+  }
+}
+@media only screen and (max-width: 1500px) {
+  .grid-container {
+    grid-template-columns: auto auto auto;
+  }
+}
+@media only screen and (max-width: 1130px) {
+  .grid-container {
+    grid-template-columns: auto auto;
+  }
+}
+@media only screen and (max-width: 760px) {
+  .grid-container {
+    grid-template-columns: auto;
+  }
+  .product-listing-all-containers {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+}
+@media only screen and (max-width: 390px) {
+  .product-listing-all-containers {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+}

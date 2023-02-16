@@ -1,0 +1,109 @@
+.product-listing-card {
+  width: 300px;
+  padding: 2rem 1rem;
+
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: all 300ms ease-in;
+}
+.product-listing-card:hover {
+  transform: scale(1.02);
+}
+.product-listing-img-container {
+  width: 100%;
+  height: 15rem;
+  text-align: center;
+
+  object-fit: contain;
+}
+.product-listing-image {
+  height: 100%;
+  width: 80%;
+  
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.product-listing-details-container {
+  padding-top: 1rem;
+  min-height: 8rem;
+}
+.author-name-card {
+  font-size: 0.9rem;
+  margin-top: 0.1rem;
+  margin-bottom: 0.8rem;
+}
+
+.add-btn-price{
+  border: none;
+  text-decoration: none;
+  background-color: blue;
+  box-shadow: none;
+  
+}
+.add-btn-price:hover{
+  border: none;
+  text-decoration: none;
+}
+.price {
+  font-weight: 700;
+  font-size: 1rem;
+  background-color: var(--primary-color1);
+  padding: 0.7rem 1rem;
+
+  color: #fff;
+  text-align: center;
+  border-radius: 4px 0 0 4px;
+}
+.buy {
+  font-weight: 700;
+  font-size: 1rem;
+  background-color: #222;
+  padding: 0.7rem;
+  flex: 1;
+  color: #fff;
+  text-align: center;
+  border-radius: 0 4px 4px 0px;
+  background-color: #222;
+}
+.product-listing-btn {
+  background-color: transparent;
+  width: 100%;
+  color: #fff;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: 1rem;
+  transform: translateY(0px);
+  transition: 0.3s linear;
+  margin-top: 1rem;
+  border: none;
+
+}
+.product-listing-btn:hover {
+  transform: translateY(-4px);
+cursor: pointer;
+}
+
+.product-listing-btn:hover.shopping-cart {
+  transform: translateX(0%);
+}
+.details-link{
+  text-decoration: underline;
+  color: var(--primary-color1);
+  cursor: pointer;
+}
+.details-link:hover{
+  color: var(--primary-color);
+}
+
+
+@media only screen and (max-width: 390px) {
+  .popular-books{
+    font-size: 1.5rem;
+  }
+  .product-listing-container{
+    margin-top: 1.2rem;
+  }
+}
