@@ -1,15 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700&family=Solitreo&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700&family=Solitreo&display=swap");
 
 /* font-family: 'Solitreo', cursive; */
 
 * {
+  
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
 }
+
 
 :root {
   --primary-color: #ffb703;
@@ -23,7 +25,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Roboto Slab' serif;
+  font-family: "Roboto Slab" serif;
 }
 
 h1 {

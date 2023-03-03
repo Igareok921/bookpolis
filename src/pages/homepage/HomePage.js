@@ -36,14 +36,14 @@
 // }
 
 // export default HomePage;
-import React, { useEffect, useState } from 'react';
-import Showcase from '../../components/layouts/showcase/Showcase';
-import ProductListing from '../../components/layouts/productlisting/ProductListing';
-import Footer from '../../components/layouts/footer/Footer';
-import { BooksData } from '../../books-data/BooksData';
+import React, { useEffect, useState } from "react";
+import Showcase from "../../components/layouts/showcase/Showcase";
+import ProductListing from "../../components/layouts/productlisting/ProductListing";
+import Footer from "../../components/layouts/footer/Footer";
+import { BooksData } from "../../books-data/BooksData";
 
 function HomePage() {
-  const [searchTerm, setSearchTerm] = useState('');
+  const [searchTerm, setSearchTerm] = useState("");
   const [booksdata, setBooksData] = useState(BooksData);
 
   const handleChange = (e) => {
@@ -58,7 +58,7 @@ function HomePage() {
         book.author_name.toLowerCase().includes(searchTermLowerCase)
     );
     setBooksData(filterBooks);
-    if (searchTerm === '') {
+    if (searchTerm === "") {
       setBooksData(BooksData);
     }
   }, [searchTerm]);

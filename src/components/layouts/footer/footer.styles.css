@@ -1,6 +1,7 @@
 .footer-container {
   background-color: #222;
   padding: 2rem;
+  
 }
 .footer-container h2 {
   color: var(--white-color);
